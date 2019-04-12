@@ -16,16 +16,15 @@
     font-family: Linearicons-Free;
     speak: none;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-variant: normal;
     text-transform: none;
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #F8C627;
-    border: 1px solid #F8C627;
+    background:#fff0c4;
     border-radius: 50%;
-    padding: 30px;
+    padding: 25px;
 }
 .align-text{
   text-align: left;
@@ -46,7 +45,7 @@ button .Download-Button{
   width: auto;
 }
     .ftco-navbar-light.scrolled .Logo{
-      height: 50px;
+      height: 60px;
       width: auto;
     }
 @media screen and (max-width: 728px) {
@@ -66,7 +65,7 @@ button .Download-Button{
   font-style: normal;
   line-height: 36px;
   font-family:Open Sans;
-  color: #f2f2f2;
+  color: #333333;
   letter-spacing:1.5px;
   text-align: left;
 }
@@ -76,7 +75,7 @@ button .Download-Button{
   font-style: normal;
   line-height: 24px;
   font-family:Open Sans;
-  color: #f2f2f2;
+  color: #333333;
 }
 
 .wrapper {
@@ -84,12 +83,15 @@ button .Download-Button{
 }
 
 .Download-Button-Style{
-  background:#00e54c;
+  background:#0081f2;
   color:white;
   font-family:Poppins;
   border:none;
   border-radius:50px;
+  letter-spacing: 1px;
   padding:10px 20px;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.1),
+          0 5px 15px 0 rgba(0,0,0,0.07);
 }
 @media screen and (max-width: 728px) {
   .Support-Mozilla-head{
@@ -135,4 +137,27 @@ display: none;
   font-size:14px;
   letter-spacing:1.5px;
   color: #ffffff;
+}
+
+.zoom{
+    transition: transform .5s;
+}
+.zoom:hover {
+  transform: scale(1.05);}
+
+.infinite-zoom{
+  animation-duration: 0.4s;
+animation-name: changewidth;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes changewidth {
+  0% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.07);
+      -webkit-transform: scale(1.07);
+  }
 }
