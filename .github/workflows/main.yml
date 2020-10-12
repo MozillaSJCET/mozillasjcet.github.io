@@ -1,7 +1,7 @@
 on: 
   push:
     branches:
-    - deploy
+    - main
 name: Publish Website
 jobs:
   FTP-Deploy-Action:
